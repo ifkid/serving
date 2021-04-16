@@ -35,7 +35,7 @@ object Main {
         .text("Port to listen on for HTTP/REST API.If set to zero " +
           "HTTP/REST API will not be exported. This port must be " +
           "different than the one specified in --port.")
-        .required()
+//         .required()
         .action((x, c) => c.copy(http_port = x))
       opt[Int]("rest_api_timeout_in_ms")
         .text("Timeout for HTTP/REST API calls.")
